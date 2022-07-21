@@ -1,39 +1,39 @@
 #!/usr/bin/python3
-"""
-This module defines a Square class
 
-Its implements value and type checks for its attributes
-"""
+"""Define a class Square."""
 
 
 class Square:
-    """Square implementation
-    """
-    def __init__(self, size=0):
-        self.__size = size
+    """Represent a square."""
+
+    def __init__(self, size):
+        """Initialize a new square.
+        Args:
+            size (int): The size of the new square.
+        """
+        self.size = size
 
     @property
     def size(self):
-        return self.__size
+        """Get/set the current size of the square."""
+        return (self.__size)
 
     @size.setter
-    def size(self, size):
-        if type(size) != int:
-            raise TypeError('size must be an integer')
-        elif size < 0:
-            raise ValueError('size must be >= 0')
-        self.__size = size
+    def size(self, value):
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
 
     def area(self):
-        """calculates the square area
-        """
-        return (self.__size ** 2)
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
 
     def my_print(self):
-        """prints a square  with the corresponding size
-        """
-        if (self.__size == 0):
-            print('')
-
-        for l in range(self.__size):
-            print('#' * self.__size)
+        """Print the square with the # character."""
+        for i in range(0, self.__size):
+            [print("#", end="") for j in range(self.__size)]
+            print("")
+        if self.__size == 0:
+            print("")
