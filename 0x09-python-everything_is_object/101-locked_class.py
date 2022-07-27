@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 101-locked_class.py
-# Ogunlade Stephen O.
+
 """Defines a locked class."""
 
 
