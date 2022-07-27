@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # 0-add_integer.py
-# Ogunlade Stephen O.
 """Defines an integer addition function."""
 
 
