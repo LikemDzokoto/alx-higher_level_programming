@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# 100-matrix_mul.py
-# Ogunlade Stephen O.
+# 100-matrix_mul
 """Defines a matrix multiplication function."""
 
 
