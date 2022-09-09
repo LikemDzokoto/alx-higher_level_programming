@@ -1,1 +1,1 @@
-# More python class practice
+#MORE SQL QUERIES
