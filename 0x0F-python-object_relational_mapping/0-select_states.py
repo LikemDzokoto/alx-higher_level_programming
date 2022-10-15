@@ -6,7 +6,8 @@
 
 
 if __name__ == "__main__":
-
+    import MySQLdb
+    import sys
     # connect to database
     db = MySQLdb.connect(host="localhost",
                          port=3306,
