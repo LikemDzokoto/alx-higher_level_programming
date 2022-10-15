@@ -1,1 +1,1 @@
-#MORE SQL QUERIES
+# Practice Python 
